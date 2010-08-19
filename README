@@ -1,0 +1,8 @@
+[IDEA-Bug Report] module resolution failure in maven multi-module project
+
+In a multi-module project, the main code in our integration module (used for testing) cannot depend upon test artifacts in other modules (even though it is defined as a compile scope in the pom.xml). The result is a failure to compile.  This works fine in 9.0.2 (IU-95.66) but fails in 9.0.3 (IU-95.429)
+
+OS: Windows XP
+JDK: JDK 1.6.0
+IDEA: 9.0
+Build: IU-95.429
